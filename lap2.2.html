@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <h2>แบบฟอร์มจองทัวร์</h2>
+
+
+<form action="/action_page.php">
+  <fieldset>
+    <legend>ข้อมูลทั่วไป</legend>
+    <label for="fname">ชื่อ-นามสกุล:</label><br>
+    <input type="text" id="fname" name="fname" placeholder="กรอกชื่อ-นามสกุล"  required ><br>
+    <label for="lname">Email:</label><br>
+    <input type="email" id="email" name="lname" required  ><br>
+    <label for="lname">โทรศัพท์:</label><br>
+    <input type="tel"  value="+66"  required ><br>
+    <label for="lname">ที่อยู่:</label><br>
+    <textarea id="address" rows="4" cols="50"></textarea><br>
+    <label for="fname">รหัสไปรษณีย์  :</label>
+    <input type="text" id="fname" name="fname" size="3"  value="" pattern="[0-9]{5}" ><br>
+    <label for="fname">รูปผู้จอง:</label>
+    <input type="file">
+    
+    
+  </fieldset>
+  <fieldset>
+    <legend>ข้อมูลเข้าสู่ระบบ</legend>
+
+    <label for="fname">Username:</label><br>
+    <input type="text" id="fname" name="fname"  pattern="[0-9a-zA-Z]*8" ><br>
+    
+
+    <label for="lname">Password:</label><br>
+    <input type="text" id="lname" name="lname"pattern="[0-9a-zA-Z].{8,} >   <br>
+    pattern="[0-9a-zA-Z].{8,} > 
+    
+  </fieldset>
+  <fieldset>
+    <legend>ข้อมูลทัวที่ต้องการ</legend>
+    <label>ยี่ห้อรถยนต์ที่ชอบ:
+        <select name="cars">
+            <option value="volvo" selected="selected" >-select- </option>
+        <option value="japan" >japan </option>
+        <option value="Andorra" >Andorra</option>
+        <option value="Germany">Germany</option>
+        <option value="Italy">Italy </option>
+        <option value="Norway">Norway </option>
+        </select>
+        </label><br>
+    <label for="fname">วันเดินทาง :</label>
+    <input type="date" id="fname" name="fname" value="" placeholder="2014-11-04" ><br>
+    <label for="fname">จำนวนผู้เดินทาง :</label>
+    <input type="text" id="fname" name="fname" size="3"   placeholder=""><br>
+    <th>เน้นการท่องเที่ยวแบบได?</th><br>
+    
+    <input type="checkbox" name="sex" value="Male" /> ชอปปิ้ง<br>
+    <input type="checkbox" name="sex" value="Female" /> ธรรมชาติ<br>
+    <input type="checkbox" name="sex" value="Female" /> ทะเล
+        
+    
+  </fieldset>
+  <label for="fname">ยอมรับเงือนไขข้อตกลง</label>
+  <input type="radio" name="sex" value="Male" checked="checked" /> I agree
+<input type="radio" name="sex" value="Female" /> I disagree
+
+<button type="button">จอง</button>
+    
+</body>
+</html>
